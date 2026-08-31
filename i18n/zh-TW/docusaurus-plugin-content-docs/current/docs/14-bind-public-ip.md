@@ -17,12 +17,12 @@ sidebar_position: 14
 ## 建立一個 Public IP
 
 首先點擊左側功能列表的 `Network Endpoint`，並點擊 `Create New`，開始建立一個 **Public IP**。
-![image-20250821143651042](../../../../../docs/docs-images/bind-public-ip/01.png)
+![](../../../../../docs/docs-images/bind-public-ip/01.png)
 
 選擇 **Region** 及 **IP Bandwidth Type** 後，點擊 `Create` 即可建立 **Public IP**。
 
 請注意，此 **Public IP 的** Region 必須與後續欲綁定的實例使用相同的 Region，選擇前請仔細確認。
-![image-20250821143651042](../../../../../docs/docs-images/bind-public-ip/02.png)
+![](../../../../../docs/docs-images/bind-public-ip/02.png)
 
 建立成功之後，在列表中即可看到該 **Public IP**，代表已就緒，您可以在建立實例時綁定。
 請注意，**Public IP** 為獨享資源，建立完成後，就算未掛載實例，也會持續消耗 Credit，請確認您的使用需求後再進行建立。
@@ -35,7 +35,7 @@ sidebar_position: 14
 - **Status**：狀態（如 Available）。
 - **Cost**：此 **Public IP** 當前已消耗的 Credit。
 - **Action**：可對此 **Public IP** 執行的動作。
-![image-20250821143651042](../../../../../docs/docs-images/bind-public-ip/03.png)
+![](../../../../../docs/docs-images/bind-public-ip/03.png)
 
 ---
 
@@ -43,38 +43,45 @@ sidebar_position: 14
 
 成功建立之後，即可於建立實例時綁定。
 請注意，建立實例時，請選擇與欲綁定的 **Public IP** 相同的 Region。
-![image-20250821144246043](../../../../../docs/docs-images/bind-public-ip/04.png)
+![](../../../../../docs/docs-images/bind-public-ip/04.png)
 
 在建立實例時，於選單下方的 **Public IP Address** 點擊 `Bind` 。
-![image-20250821144417955](../../../../../docs/docs-images/bind-public-ip/05.png)
+![](../../../../../docs/docs-images/bind-public-ip/05.png)
 
 在彈窗中選擇您欲綁定的 **Public IP** 後，選擇 `Protocol` 並填入 `Port` 即可點擊 `Bind` 進行綁定。
 若您建立了多個 **Public IP**，與實例相同 Region 的 **Public IP** 將會顯示在此列表中供您選擇。
-![image-20250821144417955](../../../../../docs/docs-images/bind-public-ip/06.png)
+![](../../../../../docs/docs-images/bind-public-ip/06.png)
 
 成功綁定之後，將會顯示該 **Public IP** 的資訊。確認無誤後，即可建立綁定了 **Public IP** 的實例。
-![image-20250821144417955](../../../../../docs/docs-images/bind-public-ip/07.png)
+![](../../../../../docs/docs-images/bind-public-ip/07.png)
 
 建立實例後，您可以在實例列表中，看到該實例成功綁定的 IP 地址。
-![image-20250821144417955](../../../../../docs/docs-images/bind-public-ip/08.png)
+![](../../../../../docs/docs-images/bind-public-ip/08.png)
 
 ---
 
 ## IP ACL 設定 
 
 每個 **Public IP** 都可以綁定 **ACL** 規則，用來控管此 IP 的對外存取權限與網路流量方向。
+
+### 建立 L3 規則
+
 1. 點擊 `Network Endpoint` 後，點選您要進行設定的 **Public IP**。
 2. 點擊 `IP ACL`。
 3. 點擊 `Add ACL Resource`。
-![image-20250821144417955](../../../../../docs/docs-images/bind-public-ip/09.png)
+![](../../../../../docs/docs-images/bind-public-ip/09.png)
 
 點擊 `Add ACL Resource` 後，即會建立 **IP ACL**，接著點擊 `Manage Rules` 開始進行設定。
-![image-20250821144417955](../../../../../docs/docs-images/bind-public-ip/10.png)
+![](../../../../../docs/docs-images/bind-public-ip/10.png)
+
+#### L3 規則說明及預設規則
+
+在上一個步驟中，在您點擊 `Manage Rules`後，此時您會看到一組預設的 L3 規則，其 IP 為`0.0.0.0/0`。
 
 此頁面顯示了此 **Public IP** 目前所有的 **ACL** 規則列表，**ACL** 依方向分為兩種：
   > **Inbound**：入站規則。控制外部哪些來源可以存取此 IP，用以限制可連入此服務的來源範圍。
   
- > **Outbound**：出站規則。定義此 IP 允許連線的目標 IP 範圍，用以控管此服務可對外連線的範圍。
+  > **Outbound**：出站規則。定義此 IP 允許連線的目標 IP 範圍，用以控管此服務可對外連線的範圍。
 
 您可以看到 ACL 規則的各個資訊欄位：
 - **Remote CIDR**： 來源或目標的 IP 範圍，以 **CIDR** 格式表示（例如 `0.0.0.0/0` 代表所有 IP）。
@@ -84,19 +91,37 @@ sidebar_position: 14
 - **Description**：用戶對此 **ACL** 撰寫的描述。
 - **Created Time**：此 **ACL** 規則建立的時間。
 - **Action**：可對此 **ACL** 執行的動作。
-![image-20250821144417955](../../../../../docs/docs-images/bind-public-ip/11.png)
+![](../../../../../docs/docs-images/bind-public-ip/11.png)
 
 系統預設會建立一條 `Inbound` 規則：**Remote CIDR** 為 `0.0.0.0/0`（代表所有來源 IP），此規則的 **Default Policy** 為 `Deny`，代表預設拒絕所有外部來源連入此 IP。
 
+#### 新增 L3 規則
+
+L3 規則中，除了預設的 IP `0.0.0.0/0` 之外，您也可以另外新增不同的 IP。
+點擊 `Add Rule` 即可開始新增。
+![](../../../../../docs/docs-images/bind-public-ip/12.png)
+
+- **Rule Direction**：此規則的方向，為 `Inbound`（入站）或 `Outbound`（出站）。
+- **Action**：Allow 為允許此 IP，Deny 為拒絕此 IP。
+- **Source IP Address**：欲套用規則的 IP 地址。
+- **Description**：對此規則的描述。
+- 設定完畢後點擊 `Create L3 Rule` 即可新增規則。
+![](../../../../../docs/docs-images/bind-public-ip/13.png)
+
+建立完成後即可看到此 L3 規則。
+![](../../../../../docs/docs-images/bind-public-ip/14.png)
+
+### 建立 L4 規則
+
 為了開放特定來源存取，接著請點擊 `New L4 Rule` 新增例外規則。
-![image-20250821144417955](../../../../../docs/docs-images/bind-public-ip/12.png)
+![](../../../../../docs/docs-images/bind-public-ip/15.png)
 
 開始設定 **L4 Rule**：
-1. 系統提示 ：此 **L4** 規則隸屬於 **L3** 規則 `0.0.0.0/0`（Default Policy: Deny）之下，因此 **L4 Policy** 只能設定為 `Allow`（為了從全面拒絕中，開放出特定的例外連線）。
+1. 系統提示 ：當前正在設置的 **L4** 規則隸屬於 **L3** 規則 `0.0.0.0/0`之下，因此 **L4 Policy** 只能設定為 `Allow`。在此案例中，`Default Policy` 為 `Deny` 的情況下，IP 地址 `0.0.0.0/0` 代表拒絕了所有的 IP 位置的存取，因此我們需要透過 L4 規則來開啟允許連線的白名單。
 2. **Destination Port**：填入欲開放的目的埠範圍，例如 8000 至 8888。若僅需開放單一埠號，可於兩個欄位填入相同數值，例如 `8000` 至 `8000`。
 3. 確認欲開放的埠號範圍無誤後，點擊 `Add` 將此設定加入規則清單。
 4. 點擊 `Create L4 Rule`，完成規則建立。
-![image-20250821144417955](../../../../../docs/docs-images/bind-public-ip/13.png)
+![](../../../../../docs/docs-images/bind-public-ip/16.png)
 
 **L4 Rule** 建立完畢之後，會隸屬於 **L3** 規則 `0.0.0.0/0` 底下的例外規則列表中。此時該筆規則的 Policy 為 `Allow`，代表在預設拒絕所有連線（L3 的 Deny 規則）的前提下，僅開放 8000 至 8888 埠號範圍的連線。
 
@@ -107,14 +132,14 @@ L4 Rule 列表中的資訊：
 - **Description**：用戶對此 **L4** 規則撰寫的描述。
 - **Created Time**：此 **L4** 規則建立的時間。
 - **Action**：可對此規則執行的操作，例如編輯（Edit）。
-![image-20250821144417955](../../../../../docs/docs-images/bind-public-ip/14.png)
+![](../../../../../docs/docs-images/bind-public-ip/17.png)
 
 ---
 
 ## 多個實例綁定同一個 Public IP
 
 在建立時綁定該 **Public IP** 的各個實例，將會顯示在清單底下。
-![image-20250821144417955](../../../../../docs/docs-images/bind-public-ip/15.png)
+![](../../../../../docs/docs-images/bind-public-ip/18.png)
 
 ---
 
