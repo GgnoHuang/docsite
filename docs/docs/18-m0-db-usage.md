@@ -26,6 +26,10 @@ Glows.ai provides a managed PostgreSQL database service with the following featu
 - Data analytics projects
 - Any project requiring a database
 
+Start building and testing with Matrix0 while we continue improving its performance, scalability, and developer experience.
+
+Billing is not enabled during Alpha. Usage-based pricing will be introduced as Matrix0 moves toward broader availability.
+
 ## Service Activation
 
 After logging in to the Glows.ai platform, you can directly access Matrix0 through the following entry point.
