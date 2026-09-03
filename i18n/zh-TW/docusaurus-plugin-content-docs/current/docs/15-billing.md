@@ -7,6 +7,27 @@ sidebar_position: 15
 
 在 **Billing** 頁面，您可以查看和管理您的支出與餘額。
 
+
+
+## Billing 主頁面 
+### 上方總儀表板
+
+- **Balance (Credit)**：當前餘額，例如 11.160。點擊能查看 Credit 詳情，以及儲值。
+- **Total Spending (Credit)**：總支出，例如 83.150。
+- **Total Duration (h)**：總使用時間，例如 520.8 小時。
+- **Invoicing Limit (Credit)**：目前無限制。
+![Recharge](../../../../../docs/docs-images/p11/p11-zh-imgs/01.png)
+
+
+### My Spending
+
+- 顯示每筆消費的詳細資訊，包括 **Time, Name, Status, Payment**。
+- 您也可以透過消費類型做篩選，包括 **Instances, Others**。
+![Recharge](../../../../../docs/docs-images/p11/p11-zh-imgs/02.png)
+
+### Recharge
+
+
 ## **儲值 Credits**
 
 1. 點擊**My Spending** 右方的 `Recharge` 按鈕
@@ -17,19 +38,6 @@ sidebar_position: 15
 5. 勾選 **I have read and agree to the EULA** 。
 6. 確認顯示金額是否正確，確認後點擊 **Recharge** 完成儲值。
 
-![Recharge](../../../../../docs/docs-images/p11/01.Recharge.jpg)
 
-## **帳單總覽**
-
-- **Balance (Credit)**：當前餘額，例如 204.160。點擊此箭頭進入儲值畫面。
-- **Total Spending (Credit)**：總支出，例如 195.830。
-- **Total Duration (h)**：總使用時間，例如 17.3 小時。
-- **Invoicing Limit (Credit)**：目前無限制。
-
-![Billing Overview](../../../../../docs/docs-images/p11/02.Billing%20Overview.jpg)
-
-## **歷史帳單列表**
-
-- 顯示每筆交易的詳細資訊，包括 **Time, Name, Status, Payment**。
-
-![Billing history](../../../../../docs/docs-images/p11/03.Billing%20history.jpg)
+![Recharge](../../../../../docs/docs-images/p11/p11-zh-imgs/03.png)
+![Recharge](../../../../../docs/docs-images/p11/p11-zh-imgs/04.png)
