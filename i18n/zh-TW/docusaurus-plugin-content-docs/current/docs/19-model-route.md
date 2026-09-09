@@ -172,7 +172,7 @@ CCSwitch 安裝包下載地址：[點擊進入](https://github.com/farion1231/cc
 
 **1、目前使用流程是什麼樣的？**
 
-目前服務已正式上線。您可以按照教學中的[建立 Model Route](#建立 Model Route)步驟建立 Model Route 並獲取 API URL 和 API KEY，然後按照[接口 curl 使用說明](#接口 curl 使用說明)和[Agent 配置 Model Route](Agent 配置 Model Route)步驟操作即可開始使用。
+目前服務已正式上線。您可以按照教學中的[建立 Model Route](#建立 Model Route)步驟建立 Model Route 並獲取 API URL 和 API KEY，然後按照[接口 curl 使用說明](#接口 curl 使用說明)和[Agent 配置 Model Route](#Agent 配置 Model Route)步驟操作即可開始使用。
 
 **2、支援在 Codex 和Claude Code 內使用嗎？**
 
