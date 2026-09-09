@@ -1,11 +1,11 @@
 ---
 id: contact-us
-sidebar_position: 18
+sidebar_position: 20
 ---
 
-# お問い合わせ
+# 聯繫我們
 
-**Glows.ai** のご利用中にご不明な点やご意見がございましたら、以下の方法でお気軽にお問い合わせください。
+若您在使用 **Glows.ai** 的過程中有任何疑問或建議，歡迎透過以下方式聯繫我們：
 
 **Email:** [support@glows.ai](mailto:support@glows.ai)
 
