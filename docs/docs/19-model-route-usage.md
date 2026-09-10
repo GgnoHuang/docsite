@@ -98,7 +98,7 @@ curl -X GET \
   -H "Content-Type: application/json"
 ```
 
-1. Call a model for inference
+2. Call a model for inference
 
 ```bash
 curl -X POST \
@@ -160,7 +160,7 @@ Note: The model you enter must be one of the models selected when you created th
 
 ![image-20260909001500694](../docs-images/p19//image-20260909001500694.png)
 
-Keep the default values for the other options, and click the `Add` button to complete the configuration.
+Leave this at the default value for this tutorial, and click the `Add` button to complete the configuration.
 
 ![image-20260909001908219](../docs-images/p19//image-20260909001908219.png)
 
