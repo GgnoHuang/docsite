@@ -9,6 +9,19 @@ On the **Space Management** page, you have full control over your storage resour
 
 ---
 
+## **Notice of Snapshot and Image Billing Policy Update**
+
+To provide users with a more flexible and efficient way to manage environments and data, the platform will update the quota and billing mechanism for Snapshot and Image services effective December 1, 2026, at 00:00 (UTC+8).
+After the update, Storage package quotas will apply exclusively to Datadrive storage. Snapshot and Image resources will no longer consume Storage quotas and will instead be billed based on their actual storage usage with hourly billing.
+The updated billing rules are as follows:
+- Billing rate: 0.0139 credits/hour
+- Billing starts once a Snapshot or Image is successfully created
+- Billing stops once the corresponding Snapshot or Image is deleted
+This adjustment is designed to provide greater flexibility in resource management and allow users to optimize costs based on actual usage.
+
+If you have any questions, please contact us here:[Click here to contact us](/docs/19-contact-us.md)
+
+
 ## **Space Storage**
 
 At the top of the page, the **Space Storage** bar shows the current usage clearly, for example:

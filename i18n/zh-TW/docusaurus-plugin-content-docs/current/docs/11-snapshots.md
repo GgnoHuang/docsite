@@ -10,6 +10,22 @@ sidebar_position: 11
 以下是功能介紹與操作指南：
 
 ---
+
+## **Snapshot 與 Image 計費方式調整通知**
+
+為提供更彈性且便利的環境與資料管理體驗，平台將於 **2026 年 12 月 1 日 00:00（UTC+8）** 起調整 Snapshot 與 Image 的配額及計費機制。
+調整後，Storage 套餐配額將僅適用於 Datadrive 儲存空間；Snapshot 與 Image 將不再佔用 Storage 配額，並改採依實際使用容量進行按時計費。
+新的計費規則如下：
+- 計費單價：0.0139 credits / 小時
+- 當 Snapshot 或 Image 建立成功後，系統將開始計費
+- 當 Snapshot 或 Image 被刪除後，系統將停止計費
+
+此調整旨在讓用戶能更靈活地管理儲存資源，並依實際使用情況進行成本管理。
+
+如有任何疑問，請透過以下方式聯繫我們：
+[點擊這裡聯繫我們](/docs/contact-us)
+
+
 ## 建立 Snapshot
 
   - 在機器處於運行狀態時，您可以點擊機器右側的功能表，並點擊 `Take Snapshot`，開始建立 Snapshot。
