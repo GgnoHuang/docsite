@@ -32,7 +32,7 @@ sidebar_position: 11
   - **Available** タブでは、スナップショットを削除すると Restorable タブに移動します。
   - **Restorable** タブでは、スナップショットを削除すると完全に削除され、復元できません。
 
-![Snapshots list](../../../../../docs/docs-images/p08/01.Snapshots%20list.jpg)
+![Snapshots list](../../../../../docs/docs-images/p08/01.png)
 
 ## **注意事項**
 

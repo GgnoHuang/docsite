@@ -17,7 +17,7 @@ sidebar_position: 13
 
 - **Using 6.63GiB of 50GiB**
 - **Expires on 2025-01-24**
-  ![Space storage](../../../../../docs/docs-images/p10/01.Space%20storage.jpg)
+  ![Space storage](../../../../../docs/docs-images/p10/01.png)
 
 ### **ストレージプランのアップグレード**
 
@@ -38,15 +38,15 @@ sidebar_position: 13
 
 プランを選択後、`Charge` ボタンでチャージするか、`Modify Plan` ボタンで必要な Credit を直接差し引くことができます。
 
-![Upgrade](../../../../../docs/docs-images/p10/02.Upgrade.jpg)
+![Upgrade](../../../../../docs/docs-images/p10/02.png)
 
 ## **クォータ（Quota）**
 
 `Modify` ボタンをクリックすると、**Snapshot** および **Data Drive** の使用可能なストレージ容量を調整できます。
-![Modify](../../../../../docs/docs-images/p10/03.Modify%20Quota.jpg)
+![Modify](../../../../../docs/docs-images/p10/03.png)
 
 調整後、ページ上には Snapshot と Data Drive の個別のストレージ使用状況が表示されます。例：
 
 - **Using 0.00GB of 3GB 0.00%**
 
-![Quota list](../../../../../docs/docs-images/p10/04.Quota%20list.jpg)
+![Quota list](../../../../../docs/docs-images/p10/04.png)
