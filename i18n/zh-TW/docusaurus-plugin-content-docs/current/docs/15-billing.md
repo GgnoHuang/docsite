@@ -14,13 +14,13 @@ sidebar_position: 15
 - **Total Spending (Credit)**：總支出，例如 83.150。
 - **Total Duration (h)**：總使用時間，例如 520.8 小時。
 - **Invoicing Limit (Credit)**：目前無限制。
-![](../../../../../docs/docs-images/p11/p11-zh-imgs/01.png)
+![](../../../../../docs/docs-images/p11/01.png)
 
 ### My Spending
 
 - 顯示每筆消費的詳細資訊，包括 **Time, Name, Status, Payment**。
 - 您也可以透過消費類型做篩選，包括 **Instances, Others**。
-![](../../../../../docs/docs-images/p11/p11-zh-imgs/02.png)
+![](../../../../../docs/docs-images/p11/02.png)
 
 ## **儲值 Credits**
 
@@ -31,8 +31,8 @@ sidebar_position: 15
 4. 選擇 **Payment Method**（目前支援 PayPal, NewebPay 和 stripe）。
 5. 確認顯示金額是否正確，確認後點擊 **Recharge** 完成儲值。
 
-![](../../../../../docs/docs-images/p11/p11-zh-imgs/03.png)
-![](../../../../../docs/docs-images/p11/p11-zh-imgs/04.png)
+![](../../../../../docs/docs-images/p11/03.png)
+![](../../../../../docs/docs-images/p11/04.png)
 
 - 此儲值功能與點擊畫面上方導航列的的 Credit 餘額後，顯示的列表中的 `Recharge` 相同。
-![](../../../../../docs/docs-images/p11/p11-zh-imgs/05.png)
+![](../../../../../docs/docs-images/p11/05.png)

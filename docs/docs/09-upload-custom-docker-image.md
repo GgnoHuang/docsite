@@ -20,7 +20,7 @@ The updated billing rules are as follows:
 - Billing stops once the corresponding Snapshot or Image is deleted
 This adjustment is designed to provide greater flexibility in resource management and allow users to optimize costs based on actual usage.
 
-If you have any questions, please contact us here:[Click here to contact us](/docs/19-contact-us.md)
+If you have any questions, please contact us here: [Click here to contact us](/docs/contact-us)
 
 ## Creating a Docker Image Tar Package
 
