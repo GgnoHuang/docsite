@@ -5,7 +5,7 @@ sidebar_position: 29
 
 # Glows.ai GPU Rental Platform FAQs
 
-This page collects frequently asked questions about the Glows.ai GPU rental platform, covering data storage, instance environments, connection methods, auto deployment, billing, and service guarantees. If you need further assistance, feel free to contact us through our official support channels.
+This page collects frequently asked questions about the Glows.ai GPU rental platform, covering data storage, instance environments, connection methods, auto deployment, billing, and service guarantees. If you need further assistance, feel free to [contact us](#contact-us) through our official support channels.
 
 ## Instance Types and Permissions
 
@@ -22,13 +22,13 @@ When creating an instance, selecting an Image labeled `Windows` or `For VM` give
 
 ### After logging in to a VM instance, I am not root and get permission errors when running commands such as docker. What should I do?
 
-VM instances log in as the glows user by default. When you need root privileges, run:
+VM instances log in as the `glows` user by default. Here, `glows` is the Linux user account inside the instance, not your Glows.ai platform account. When you need root privileges, run:
 
 ```bash
 sudo su
 ```
 
-to switch to root. The password is the SSH password of the glows user shown under `Access` on the instance page.
+to switch to root. The password is the SSH password of the `glows` user shown under `Access` on the instance page.
 
 If you only want to run a single command, you can also prefix it with sudo, for example `sudo docker ps`.
 
@@ -38,7 +38,7 @@ Yes. Instances log in with the root account by default. You can also create othe
 
 ### Can I choose my own OS environment?
 
-The platform currently provides Ubuntu-series OS environments and Windows Server 2022. Ubuntu is recommended for general use. If you need another OS, please contact us for evaluation.
+The platform currently provides Ubuntu-series OS environments and Windows Server 2022. Ubuntu is recommended for general use. If you need another OS, please [contact us](#contact-us) for evaluation.
 
 ### Can the Windows environment experience lag or instability during remote operation?
 
@@ -84,7 +84,7 @@ A signal is sent every 30 seconds, and the connection is considered lost only af
 1. Set the service host to `0.0.0.0`. If it is set to `localhost` or `127.0.0.1`, only the machine itself can reach it.
 2. On the instance page, click `New Port Forwarding`, enter the service port (e.g., 8000), and check HTTPS. A public URL will be generated.
 
-Note: The port in the URL will not be 8000, but something like `:23456` (as shown below, the URL you get after clicking `Copy` will not use 8000). The platform maps the port inside the machine to another unused port to avoid conflicts when everyone uses 8000.
+Note: The URL you get after clicking `Copy` uses an assigned external port (e.g., 23456) rather than port 8000.
 
 ![ ](../docs-images/p29/03.png)
 
@@ -155,7 +155,7 @@ You don't need to specify it. Instances created with the SDK mount DataDrive by 
 
 ### Why do I need to reconfigure permissions to read DataDrive after mounting it?
 
-Usually you don't need to configure permissions, because the default glows user already has read and write access to DataDrive and can read it directly.
+Usually you don't need to configure permissions, because the default `glows` user already has read and write access to DataDrive and can read it directly.
 
 Additional setup is usually only required when you have created other users, or when a tool runs as another user, for example when linking a DataDrive folder into the VM for an internal tool to read.
 
@@ -325,7 +325,7 @@ No remount is needed. Data is synced in real time, and you can expand capacity a
 
 ### How is storage space priced?
 
-Storage space is billed by plan or by usage. Please refer to the platform's Storage page for specific prices. For bulk purchases or enterprise needs, please contact us.
+Storage space is billed by plan or by usage. Please refer to the platform's Storage page for specific prices. For bulk purchases or enterprise needs, please [contact us](#contact-us).
 
 ## Custom Images
 
@@ -416,7 +416,7 @@ First make sure the instance has not been released, then try downloading manuall
 3. Find the generated `.mp4` file.
 4. Right-click the file and select `Download`.
 
-If you still can't download it, please take a screenshot and contact platform technical support.
+If you still can't download it, please take a screenshot and [contact platform technical support](#contact-us).
 
 ### Custom nodes are missing after importing a workflow into ComfyUI. How do I fix this?
 
@@ -430,7 +430,7 @@ It usually means the model has not been loaded correctly. Please check that the 
 
 ### Can I register with a regular email instead of Gmail?
 
-The system currently supports registration with Gmail and GitHub by default. If you need to create an account with a regular email, please contact our technical or sales team for assistance.
+The system currently supports registration with Gmail and GitHub by default. If you need to create an account with a regular email, please contact our technical or sales team at [support@glows.ai](mailto:support@glows.ai) for assistance.
 
 ### Is there a minimum amount for online top-up?
 
@@ -446,7 +446,7 @@ No. The platform uses a pay-as-you-go billing model, so you only pay for what yo
 
 ### What is the price of H100 GPUs?
 
-Please refer to the platform page for H100 GPU pay-as-you-go pricing. For long-term rentals or monthly plans, please contact us for discounted pricing.
+Please refer to the platform page for H100 GPU pay-as-you-go pricing. For long-term rentals or monthly plans, please [contact us](#contact-us) for discounted pricing.
 
 ### Are there discounts for bulk or long-term rentals?
 
@@ -462,7 +462,7 @@ No. In general use, there are no subscription fees, setup fees, or minimum usage
 
 ### How is pricing determined for software or platform partners?
 
-Billing plans can be evaluated based on usage, storage, and the partnership model. For reselling, distribution, or platform partnerships, please contact our sales team to discuss a partnership agreement.
+Billing plans can be evaluated based on usage, storage, and the partnership model. For reselling, distribution, or platform partnerships, please [contact our sales team](#contact-us) to discuss a partnership agreement.
 
 ## Service Guarantees and Compensation
 
