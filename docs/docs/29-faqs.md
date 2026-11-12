@@ -403,7 +403,7 @@ Yes. NCCL can be used for distributed training and multi-GPU data synchronizatio
 
 ### Are there plans to launch vGPU?
 
-There is no official launch date for vGPU yet. If you have needs related to partial GPU memory, cost control, or virtualized GPUs, please summarize your use case and send it to us for evaluation.
+There is no official launch date for vGPU yet. If you have needs related to partial GPU memory, cost control, or virtualized GPUs, please summarize your use case and send it to us at [support@glows.ai](mailto:support@glows.ai) for evaluation.
 
 ## Applications (ComfyUI, FramePack)
 

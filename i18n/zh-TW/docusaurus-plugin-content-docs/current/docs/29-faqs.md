@@ -403,7 +403,7 @@ Glows.ai 平台部署的 H100/H200 GPU 支援 NVIDIA MIG 能力。具體開放�
 
 ### vGPU 功能是否有上線計畫？
 
-vGPU 目前尚未公布正式上線時間。若您有部分 GPU 記憶體、成本控制或虛擬化 GPU 相關需求，可彙整使用情境並提供給我們評估。
+vGPU 目前尚未公布正式上線時間。若您有部分 GPU 記憶體、成本控制或虛擬化 GPU 相關需求，可彙整使用情境並寄至 [support@glows.ai](mailto:support@glows.ai) 提供給我們評估。
 
 ## 應用程式（ComfyUI、FramePack）
 
